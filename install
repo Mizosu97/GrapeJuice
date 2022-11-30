@@ -10,8 +10,8 @@ printf "> "
 
 read ans
 
-if [ $ans == "ok" ] then
-vi $HOME/.bashrc
+if [ $ans == "ok" ]; then
+nano $HOME/.bashrc
 fi
 
 
