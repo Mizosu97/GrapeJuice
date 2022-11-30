@@ -1,0 +1,5 @@
+#!/bin/bash 
+
+git clone --depth=1 https://gitlab.com/brinkervii/grapejuice.git /tmp/grapejuice
+cd /tmp/grapejuice
+./install.py
