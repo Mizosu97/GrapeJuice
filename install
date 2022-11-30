@@ -3,3 +3,15 @@
 git clone --depth=1 https://gitlab.com/brinkervii/grapejuice.git /tmp/grapejuice
 cd /tmp/grapejuice
 ./install.py
+
+echo -n "\n\nAppend the below line of code to the end of your .bashrc. Your .bashrc will open when you type \"ok\"\n\n"
+echo -n "export PATH=\"$HOME/.local/bin:$PATH\"\n\n"
+echo -n "> "
+
+read ans
+
+if [ $ans == "ok" ] then
+vi $HOME/.bashrc
+fi
+
+
