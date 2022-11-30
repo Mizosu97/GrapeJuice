@@ -4,9 +4,9 @@ info.pacman_depends = {"python-pip", "cairo", "gtk", "gobject-introspection", "d
 
 info.aur_depends = {}
 
-info.directories = {}
+info.directories = {"$HOME/grapejuice", "$HOME/.config/brinkervii", "$HOME/.local/share/grapejuice"}
 
-info.files = {}
+info.files = {"/usr/bin/grapejuice", "/usr/bin/grapejuice-gui"}
 
 return info
 
