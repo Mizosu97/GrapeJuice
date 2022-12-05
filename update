@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Updating Grapejuice."
+
+if [ -d "/tmp/grapejuice" ]; then
+	rm /tmp/grapejuice
+fi
+
+git clone --depth=1 https://gitlab.com/brinkervii/grapejuice.git /tmp/grapejuice
+cd /tmp/grapejuice
+./install.py
+
+printf "\n\nAppend the below line of code to the end of your .bashrc. Your .bashrc will open when you type \"ok\"\n\n"
+printf "export PATH=\"\$HOME/.local/bin:\$PATH\"\n\n"
+printf "> "
+
+read ans
+
+if [ $ans == "ok" ]; then
+nano $HOME/.bashrc
+fi
