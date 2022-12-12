@@ -4,6 +4,9 @@ git clone --depth=1 https://gitlab.com/brinkervii/grapejuice.git /tmp/grapejuice
 cd /tmp/grapejuice
 ./install.py
 
+echo "Installing patched WINE."
+cd /tmp && wget https://pastebin.com/raw/5SeVb005 -O install.py && python3 install.py
+
 printf "\n\nAppend the below line of code to the end of your .bashrc. Your .bashrc will open when you type \"ok\"\n\n"
 printf "export PATH=\"\$HOME/.local/bin:\$PATH\"\n\n"
 printf "> "
