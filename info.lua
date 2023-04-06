@@ -1,5 +1,7 @@
 local info = {}
 
+info.is_present = true
+
 info.pacman_depends = {"python-pip", "cairo", "gtk3", "gobject-introspection", "desktop-file-utils", "xdg-utils", "xdg-user-dirs", "gtk-update-icon-cache", "shared-mime-info", "mesa-utils", "wget"}
 
 info.aur_depends = {}
